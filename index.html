@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<title>Virginie Do | Research Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="ZH9rNUQ8fLpo85v4VsWz5R_BzntYckhirpbbVEE5ASQ" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('pp.jpeg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:0%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#publications" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Research</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:60%, margin-right:60%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Virginie Do</b></h1>
+    <p>Researcher</p>
+    <img src="files/IMG_2941.jpeg" alt="pp" class="w3-image" width="250" height="300">
+    <p> <i class="fa fa-twitter w3-hover-opacity"></i> <a href="https://twitter.com/gini_do">@gini_do</a> || <a href="https://scholar.google.com/citations?user=u3QYKhkAAAAJ">Google Scholar</a> || <a href="https://www.linkedin.com/in/virginie-do-08914312b/en"><i class="fa fa-linkedin w3-hover-opacity"></i></a></p>
+
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p> I am an AI Research Scientist at Meta working on LLM alignment and agents. I am based in London, UK. </p>
+    <p> In 2023, I completed my PhD at PSL University (Université Paris Dauphine) and Meta AI (Facebook AI Research) in Paris, advised by <a href="https://scholar.google.fr/citations?user=tYro5N8AAAAJ&hl">Nicolas Usunier</a> (Meta AI), <a href="https://www.lamsade.dauphine.fr/~atif/doku.php">Jamal Atif</a> and <a href="https://fr.wikipedia.org/wiki/Jérôme_Lang">Jérôme Lang</a> (PSL University, CNRS). </p>
+
+    <p> My PhD focused on fairness in recommender systems and blends economic concepts with convex optimization and bandit techniques. An overview can be found in this <a href="https://montrealethics.ai/fair-allocation-of-exposure-in-recommender-systems/">blogpost</a>.</p>
+
+    <p> Prior to my PhD, I received an MSc in Social Data Science from the University of Oxford, an MSc/BSc in Applied Mathematics from Ecole Polytechnique <i>(Diplôme d'Ingénieur)</i> , and a BA in Philosophy from Université Paris Nanterre. </p>
+
+
+    <!--<button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download CV
+    </button>-->
+
+
+  <!-- End About Section -->
+  </div>
+
+
+  <!-- Publications -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="publications">
+    <h2>Publications & preprints </h2>
+    <hr class="w3-opacity">
+    <p> <i>Robust LLM Safeguarding via Refusal Feature Adversarial Training. </i> ICLR 2025. <a href="https://arxiv.org/abs/2409.20089">[pdf]</a>
+      <br> Lei Yu, <u>Virginie Do</u>, Karen Hambardzumyan, Nicola Cancedda.
+    </p>
+    <p> <i>The Llama 3 Herd of Models. </i> arXiv 2024. <a href="https://arxiv.org/abs/2407.21783">[pdf]</a>
+      <br> Llama Team, AI @ Meta (Core contributor to safety finetuning).
+    </p>
+    <p> <i>Fairness in recommender systems: Insights from social choice. </i> PhD thesis. <a href="files/thesis_VirginieDo_finalrevisions.pdf">[pdf]</a>
+      <br> <u>Virginie Do</u>.
+    </p>
+    <p> <i>Group fairness without demographics using social networks. </i> ACM FAccT 2023. <a href="https://arxiv.org/pdf/2305.11361.pdf">[pdf]</a>
+      <br> David Liu, <u>Virginie Do</u>, Nicolas Usunier and Maximilian Nickel.
+    </p>
+    <p> <i>Contextual bandits with concave rewards, and an application to fair ranking. </i> ICLR 2023. <a href="https://arxiv.org/pdf/2210.09957.pdf">[pdf]</a>
+      <br> <u>Virginie Do</u> Elvis Dohmatob, Matteo Pirotta, Alessandro Lazaric and Nicolas Usunier.
+    </p>
+    <p> <i>Optimizing generalized Gini indices for fairness in rankings. </i> ACM SIGIR 2022. <a href="https://arxiv.org/pdf/2204.06521.pdf">[pdf]</a>
+      <br> <u>Virginie Do</u> and Nicolas Usunier.
+    </p>
+    <p> <i>Fast online ranking with fairness of exposure. </i> ACM FAccT 2022. <a href="https://arxiv.org/pdf/2209.13019.pdf">[pdf]</a>
+      <br> Nicolas Usunier, <u>Virginie Do</u>, Elvis Dohmatob.
+    </p>
+    <p> <i>Online approval committee elections. </i> IJCAI 2022. <a href="https://arxiv.org/abs/2202.06830">[pdf]</a>
+      <br> <u>Virginie Do</u>, Matthieu Hervouin, Jérôme Lang, and Piotr Skowron.
+    </p>
+    <p> <i>Online certification of preference-based fairness for personalized recommender systems. </i> AAAI 2022. <a href="http://arxiv.org/pdf/2104.14527.pdf
+      ">[pdf]</a> <br> <u>Virginie Do</u>, Sam Corbett-Davies, Jamal Atif, and Nicolas Usunier.
+      <br>&#127942 <b>Outstanding paper award </b>(1 award / 1.3k accepted papers and 9.2k submissions).
+    </p>
+    <p> <i>Two-sided fairness in rankings via Lorenz dominance. </i>  NeurIPS 2021. <a href="https://arxiv.org/pdf/2110.15781.pdf">[pdf]</a><br><u>Virginie Do</u>, Sam Corbett-Davies, Jamal Atif, and Nicolas Usunier.
+    </p>
+    <p> <i>Online selection of diverse committees. </i>  IJCAI 2021. <a href="https://www.ijcai.org/proceedings/2021/0022.pdf">[pdf]</a><br><u>Virginie Do</u>, Jamal Atif, Jérôme Lang, and Nicolas Usunier.
+    </p>
+    <p> <i>e-ViL: A Dataset and Benchmark for Natural Language Explanations in Vision-Language Tasks. </i>ICCV 2021. <a href="https://arxiv.org/pdf/2105.03761.pdf
+      ">[pdf]</a> <br>Maxime Kayser, Oana-Maria Camburu, Leonard Salewski, Cornelius Emde, <u>Virginie Do</u>, Zeynep Akata, Thomas Lukasiewicz.
+    </p>
+    <!--<p> "e-SNLI-VE-2.0: Corrected Visual-Textual Entailment with Natural Language Explanations." <u>Virginie Do</u>, Oana-Maria Camburu, Zeynep Akata, and Thomas Lukasiewicz. IEEE CVPR Workshop on Fair, Data Efficient and Trusted Computer Vision, 2020. <a href="https://arxiv.org/abs/2004.03744">[arXiv]</a>
+    </p>
+    <p>-->
+  </div>
+  <!-- End Publications Section -->
+
+
+  <!-- Misc -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="Service">
+    <h2>Service </h2>
+    <hr class="w3-opacity">
+    <p> I co-chaired the workshop <a href="https://responsibledecisionmaking.github.io/"><i>Responsible Decision-Making in Dynamic Environments</i></a> at ICML 2022</a> in Baltimore, organized with Thorsten Joachims, Alessandro Lazaric, Joelle Pineau, Matteo Pirotta, Harsh Satija and Nicolas Usunier.</p>
+    <p> Reviewer: NeurIPS 2021-2022, ICML 2022, IJCAI 2023, FAccT 2022-2023. </p>
+  </div>
+  <!-- End Misc Section -->
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> London, UK</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: first.last[at]polytechnique.org</p>
+      <p><i class="fa fa-twitter fa-fw w3-xxlarge w3-margin-right"></i> <a href="https://twitter.com/gini_do" target="_blank" class="w3-hover-text-green">@gini_do </a></p>
+    </div>
+
+  <!-- End Contact Section -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
